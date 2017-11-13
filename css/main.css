@@ -20,7 +20,7 @@
  *  13. testimonials
  *  14. download
  *  15. footer styles
- *
+ *  16. my changes
  * =================================================================== */
 
 
@@ -1080,6 +1080,15 @@ h1.intro-header {
   position: relative;
   padding-bottom: 3.6rem;
 }
+h1.intro-header-center {
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 3.4rem;
+  line-height: 1.324;
+  color: #151515;
+  position: relative;
+  padding-bottom: 3.6rem;
+  text-align: center;
+}
 
 h1.intro-header::before {
   display: block;
@@ -1091,7 +1100,17 @@ h1.intro-header::before {
   left: 0;
   bottom: 0;
 }
-
+h1.intro-header-center::before {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 70px;
+  background-color: #39b54a;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
 .wide {
   max-width: 1300px;
 }
@@ -1449,8 +1468,9 @@ h1.intro-header::before {
   display: table-cell;
   width: 100%;
   height: 100%;
-  vertical-align: bottom;    display: block;
-    text-align: center;
+  vertical-align: bottom;    
+  display: block;
+  text-align: center;
   }
 
 
@@ -1526,7 +1546,10 @@ h1.intro-header::before {
 .home-image-right img {
   vertical-align: bottom;
 }
-
+.home-image-right-size {
+  min-height: 5px;
+ 
+}
 /*  width: 75%;*/
 
 /* home social-list */
@@ -1782,6 +1805,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
   .home-content-center h1 {
     margin-bottom: 3.6rem;
+  }
+   .home-content-center input {
+    max-width: 50%;
   }
   .home-image-right {
 /*    width: 400px;*/
@@ -2304,6 +2330,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   padding: 15rem 0 9rem;
   text-align: center;
   min-height: 600px;
+}
+#testimonials ul {
+ 
+  text-align: left;
+  
 }
 
 #testimonials h1::before {
@@ -2890,6 +2921,7 @@ footer ul a:visited {
     display: none;
   }
 }
+
 
 
 /*# sourceMappingURL=main.css.map 
